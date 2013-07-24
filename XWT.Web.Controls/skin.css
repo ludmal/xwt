@@ -1,0 +1,86 @@
+﻿.msg_iwt_core 
+{
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    top: 0;
+    z-index: 10;
+    -moz-border-radius-bottomright: 5px;
+    -moz-border-radius-bottomleft: 5px;
+    -webkit-border-bottom-right-radius: 5px;
+    -webkit-border-bottom-left-radius: 5px;
+    text-align: center;
+    display: none;
+        padding: 5px;
+
+}
+
+.msg_iwt
+{
+    background: #FEF989;
+    font-size: 12px;
+    font-family:Arial;
+    color:#000;
+}
+
+/* Custom Button */
+html:not([lang*=""]) button.btn {margin:0 -3px;}
+* html .btn span {padding-top:0;}
+* html button.btn {padding-bottom:1px;}
+.btn {text-shadow: white 1px 1px 0px;display:inline-block;background:none;margin:0;padding:3px 0;border-width:0;overflow:visible;font:12px Arial,Sans-serif;text-decoration:none;color:#333;}
+.btn span {background:#ddd url('<%=WebResource("XWT.Web.Controls.bg-button.gif")%>') repeat-x 0 0;margin:0;padding:3px 0;border-left:1px solid #939393;border-right:1px solid #939393;}
+.btn span span {position:relative;padding:3px .4em;border-width:0;border-top:1px solid #939393;border-bottom:1px solid #939393;}
+.btn:hover span, .btn:hover span span, .btn:focus span, .btn:focus span span {border-color:#666666 !important;color:#000;cursor:default;}
+.btn:active span {background-position:0 -400px;background:none;background-color:#ddd;outline:none;cursor:default;border-color:#939393}
+.btn:focus, btn:link, btn:visited,.btn:active {outline:none; color:#000; cursor:default;border-color:#939393}
+
+.modal_overlay {
+    top:0px;
+    left:0px;
+    position: absolute;
+    filter:alpha(opacity=50);
+	-moz-opacity:0.5;
+	-khtml-opacity: 0.5;
+	opacity: 0.5;
+	display:none;
+}
+
+#modal_outer
+{
+    padding: 0px;
+    border: 1px solid #336699;
+    background-color:#fff;
+    position: absolute;
+    top: 100px;
+}
+
+#modal_frame
+{
+    border: 9px solid #AAC6FF;
+z-index:2px;
+}
+
+.modal_close {
+    text-align:right;
+    cursor:pointer;
+    padding:4px;
+    background: transparent url('<%=WebResource("XWT.Web.Controls.close.png")%>') ;
+    background-repeat: no-repeat;
+    height:10px;
+    width:10px;
+}
+
+#modal_title
+{
+    font-family:Arial;
+    float: left;
+    padding: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #e0edfe;
+    width: 100%;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: #D8DFF3;
+}
+
